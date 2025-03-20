@@ -18,7 +18,7 @@
 
         /* Заголовок */
         header {
-            background: linear-gradient(135deg, #111, #333);
+            background: linear-gradient(135deg, #000, #333);
             color: #fff;
             padding: 20px 0;
             font-size: 28px;
@@ -29,7 +29,7 @@
 
         /* Главная секция */
         .hero {
-            background: linear-gradient(135deg, #222, #444);
+            background: linear-gradient(135deg, #111, #444);
             color: #fff;
             padding: 50px 20px;
             text-align: center;
@@ -77,7 +77,7 @@
             color: #ccc;
         }
 
-        /* Галерея с разноцветными машинами */
+        /* Галерея с черно-белыми машинами */
         .gallery {
             padding: 30px 20px;
             background: linear-gradient(135deg, #111, #333);
@@ -97,21 +97,16 @@
             width: 100%;
             max-width: 400px;
             border-radius: 10px;
+            filter: grayscale(100%); /* Черно-белые машины */
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
         }
 
-        /* Разноцветные машины */
-        .tesla {
-            filter: hue-rotate(200deg); /* Синий оттенок */
-        }
-        .camry {
-            filter: hue-rotate(0deg); /* Красный оттенок */
-        }
-
+        /* Анимация при наведении: цвет остается черно-белым */
         .gallery img:hover {
             transform: scale(1.05);
             box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+            filter: grayscale(100%);
         }
 
         /* Контакты */
@@ -131,18 +126,18 @@
 
         /* Подвал */
         .footer {
-            background: linear-gradient(135deg, #111, #333);
+            background: linear-gradient(135deg, #000, #333);
             color: #fff;
             text-align: center;
             padding: 15px 0;
             margin-top: 30px;
         }
         a {
-            color: #00aaff;
+            color: #fff;
             text-decoration: none;
         }
         a:hover {
-            color: #ffaa00;
+            color: #ccc;
         }
 
     </style>

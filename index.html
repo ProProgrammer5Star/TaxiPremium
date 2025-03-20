@@ -15,8 +15,10 @@
             background: #000;
             color: #fff;
         }
+
+        /* Заголовок */
         header {
-            background: #111;
+            background: linear-gradient(135deg, #111, #333);
             color: #fff;
             padding: 20px 0;
             font-size: 28px;
@@ -24,11 +26,14 @@
             text-align: left;
             padding-left: 20px;
         }
+
+        /* Главная секция */
         .hero {
-            background: #222;
+            background: linear-gradient(135deg, #222, #444);
             color: #fff;
             padding: 50px 20px;
             text-align: center;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
         }
         .hero h1 {
             margin: 0;
@@ -55,49 +60,91 @@
             color: #fff;
             transform: scale(1.1);
         }
-        .services, .gallery, .contact {
+
+        /* Секция услуг */
+        .services {
             padding: 30px 20px;
-            background: #111;
+            background: linear-gradient(135deg, #111, #222);
             text-align: center;
         }
-        .services h2, .gallery h2, .contact h2 {
+        .services h2 {
             font-size: 28px;
-            margin-bottom: 20px;
             color: #fff;
         }
-        .services p, .contact p {
+        .services p {
             font-size: 18px;
             margin-bottom: 15px;
             color: #ccc;
         }
+
+        /* Галерея с разноцветными машинами */
+        .gallery {
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #111, #333);
+            text-align: center;
+        }
+        .gallery h2 {
+            font-size: 28px;
+            color: #fff;
+        }
+        .car-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
         .gallery img {
             width: 100%;
-            max-width: 300px;
-            margin: 10px;
-            filter: grayscale(100%);
+            max-width: 400px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        /* Разноцветные машины */
+        .tesla {
+            filter: hue-rotate(200deg); /* Синий оттенок */
+        }
+        .camry {
+            filter: hue-rotate(0deg); /* Красный оттенок */
+        }
+
         .gallery img:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-            filter: grayscale(0%);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
         }
+
+        /* Контакты */
+        .contact {
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #111, #222);
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 28px;
+            color: #fff;
+        }
+        .contact p {
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        /* Подвал */
         .footer {
-            background: #111;
+            background: linear-gradient(135deg, #111, #333);
             color: #fff;
             text-align: center;
             padding: 15px 0;
             margin-top: 30px;
         }
         a {
-            color: #fff;
+            color: #00aaff;
             text-decoration: none;
         }
         a:hover {
-            color: #ccc;
+            color: #ffaa00;
         }
+
     </style>
 </head>
 <body>

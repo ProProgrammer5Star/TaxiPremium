@@ -12,132 +12,105 @@
             font-family: 'Roboto', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #000;
-            color: #fff;
+            background: #fff;
+            color: #000;
         }
 
-        /* Заголовок */
         header {
-            background: linear-gradient(135deg, #000, #333);
-            color: #fff;
+            background: #f0f0f0;
+            color: #000;
             padding: 20px 0;
             font-size: 28px;
             font-weight: bold;
             text-align: left;
             padding-left: 20px;
+            border-bottom: 2px solid #ccc;
         }
 
-        /* Главная секция */
         .hero {
-            background: linear-gradient(135deg, #111, #444);
-            color: #fff;
+            background: #fff;
+            color: #000;
             padding: 50px 20px;
             text-align: center;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
         }
+
         .hero h1 {
             margin: 0;
             font-size: 36px;
             font-weight: 700;
         }
+
         .hero p {
             font-size: 18px;
             margin: 15px 0 25px;
         }
+
         .btn {
-            background: #fff;
-            color: #000;
+            background: #000;
+            color: #fff;
             padding: 15px 30px;
             text-decoration: none;
             font-size: 18px;
             font-weight: bold;
-            border: 2px solid #fff;
+            border: 2px solid #000;
             border-radius: 5px;
             transition: all 0.3s ease;
         }
+
         .btn:hover {
-            background: #000;
-            color: #fff;
+            background: #fff;
+            color: #000;
             transform: scale(1.1);
         }
 
-        /* Секция услуг */
-        .services {
+        .services, .gallery, .contact {
             padding: 30px 20px;
-            background: linear-gradient(135deg, #111, #222);
+            background: #f9f9f9;
             text-align: center;
         }
-        .services h2 {
+
+        .services h2, .gallery h2, .contact h2 {
             font-size: 28px;
-            color: #fff;
+            margin-bottom: 20px;
+            color: #000;
         }
-        .services p {
+
+        .services p, .contact p {
             font-size: 18px;
             margin-bottom: 15px;
-            color: #ccc;
+            color: #333;
         }
 
-        /* Галерея с черно-белыми машинами */
-        .gallery {
-            padding: 30px 20px;
-            background: linear-gradient(135deg, #111, #333);
-            text-align: center;
-        }
-        .gallery h2 {
-            font-size: 28px;
-            color: #fff;
-        }
-        .car-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
         .gallery img {
             width: 100%;
-            max-width: 400px;
+            max-width: 300px;
+            margin: 10px;
             border-radius: 10px;
-            filter: grayscale(100%); /* Черно-белые машины */
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Анимация при наведении: цвет остается черно-белым */
         .gallery img:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
-            filter: grayscale(100%);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
 
-        /* Контакты */
-        .contact {
-            padding: 30px 20px;
-            background: linear-gradient(135deg, #111, #222);
-            text-align: center;
-        }
-        .contact h2 {
-            font-size: 28px;
-            color: #fff;
-        }
-        .contact p {
-            font-size: 18px;
-            color: #ccc;
-        }
-
-        /* Подвал */
         .footer {
-            background: linear-gradient(135deg, #000, #333);
-            color: #fff;
+            background: #f0f0f0;
+            color: #000;
             text-align: center;
             padding: 15px 0;
             margin-top: 30px;
+            border-top: 2px solid #ccc;
         }
+
         a {
-            color: #fff;
+            color: #000;
             text-decoration: none;
         }
+
         a:hover {
-            color: #ccc;
+            color: #555;
         }
 
     </style>
